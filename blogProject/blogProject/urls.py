@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.home, name="home"),  # 127.0.0.1:8000/에서 실행
     path("posts/", include("posts.urls")),    # posts 앱 내부의 urls.py를 포함
+    
+    path('create/', views.create, name='create'),  # 새 글 작성 페이지 URL
 ]
